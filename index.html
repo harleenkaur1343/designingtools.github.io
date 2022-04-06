@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Canva Tools - Side Menu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale=1>
+        <meta description="">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mirza:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+       /* @font-face{
+            font-family:"Roboto";
+            src:url("Fonts/Roboto/Roboto-Light.ttf");
+        }
+        @font-face{
+            font-family:"Montez";
+            src:url("Fonts/Montez-Regular.ttf");
+        }
+        @font-face{
+            font-family:"Mirza";
+            src:url("Fonts/Mirza/Mirza-Medium.ttf");
+        }*/
+        * {
+            box-sizing: border-box;
+        }
+            body{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                background-image: linear-gradient(90deg,#2B7CB7, #49D9AE);
+                height:95px;
+                box-shadow: 0 6px 15px 0 #00000015;
+                position: fixed;
+                display:block;
+                width:100%;
+                top:0px;
+               
+            }
+            div.gototop{
+                position:fixed;
+                bottom:25px;
+                right:5px;
+                padding: 1px 6px 2px 6px;
+                background-color: #000000; 
+                opacity:50%;
+                border-radius: 50%;
+                display:none;
+                box-shadow:4px 4px 25px 0 #2b2b2b79; 
+                z-index:2;
+            }
+           div.gototop>a>i{
+                color:#bbbbbb ;
+                font-size:25px;
+            }
+            div.gototop:hover{
+                background-color: #181818; 
+                border: 1px solid #bbbbbb;
+                opacity:100%;
+            }
+            div.gototop:hover > a > i{
+                color:#bbbbbb;
+            }
+            .iconify-inline{
+                width:50px;
+                height:40px;
+                color:white;
+                margin:12px 0 0 15px;
+            }
+            #main{
+                margin:150px 25px 0 25px;
+                border:1px solid coral;
+            }
+            span{
+                font-family:Montserrat;
+            }
+            img{
+                box-shadow: 0 6px 20px 0 #32323225;
+                max-width:100%;
+                margin:35px 0;
+            }
+            p{
+                font-family: Roboto;
+                line-height: 25px;
+                font-size:18px;
+                color:#292929;
+                padding: 0 5px;
+                text-align: justify;
+                width:100%;
+            }
+            /*span{
+                font-family: Roboto;
+                line-height: 20px;
+                font-size:18px;
+                color:#292929;
+                padding: 0 5px;
+                text-align: justify;
+                width:100%;
+            }*/
+            div#listofcontents{
+                margin:35px 0 35px 5px;
+            }
+            h3{
+                font-size:26px;
+                color:#07A2D3;
+            }
+            div.sections{
+                margin-bottom:35px;
+            }
+            h2{
+                font-family:Mirza;
+                color:#003C97;
+                font-size:40px;
+            }
+            div.sections>img{
+                margin:30px 0;
+            }
+            div.elements>ul{
+                list-style-type:disc;
+                color:#292929;
+            }
+            ul{
+                list-style-type:disc;
+                color:#292929;
+            }
+            ul>li{
+                font-size:18px;
+                font-family:Roboto;
+                font-weight: 600;
+                margin:8px 0
+            }
+            ul#topics>li{
+                margin:10px 0;
+            }
+            ul#topics>li>a{
+                text-decoration: none;
+                color:#07A2D3;
+                font-size:18px;
+            }  
+            
+            @media only screen and (min-width:600px)
+            {
+                #main{
+                    margin:150px 50px 0 50px;
+                }
+                p{
+                    font-size:20px;
+                    line-height:30px;
+                    width:90%;
+                }
+                ul>li{
+                    font-size:20px;
+                }
+                h1{
+                    font-size:50px;
+                }
+                h2{
+                    font-size:50px;
+                }
+                h3{
+                font-size:32px;
+                }
+                ul#topics>li>a{
+                font-size:22px;
+                }  
+            }
+            @media only screen and (min-width:768px)
+            {
+                #main{
+                    margin:150px 70px 0 70px;
+                }
+                img{
+                    max-width:85%;
+                }
+                h1{
+                    font-size:52px;
+                }
+            }
+            @media only screen and (min-width:768px)
+            {
+                p{
+                    font-size:22px;
+                }
+                ul>li{
+                    font-size:22px;
+                }
+            }
+            @media only screen and (min-width:992px)
+            {
+                #main{
+                    margin:150px 100px 0 100px;
+                }
+            }
+        </style>
+    
+    </head>
+    <body>
+        <nav style="padding:20px 0 0 0; text-align:center;">
+            <span class="sitename" style="padding-top:55px; font-family:Montez; color:white; font-size:36px;">Design Tools</span>
+        </nav>
+        <div class="gototop" id="totop">        
+            <a href="#main"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <!--Main Article starts-->
+        <div id="main">
+            <h1><span class="part1h1" style="color:#054EA4;">Canva Tools - </span><span class="part2h1" style="color:#343434;">Side Menu</span></h1>
+            <img src="images/canva.webp" alt="Featured Image">
+            <p>Before creating any design on Canva, it’s essential to know how to work on its interface. In this article, we’ll see the tools available in the Side Menu.</p>
+            <!--CONTENTS OF PAGE-->
+            <div id="listofcontents">
+                <h3>Contents</h3>
+                    <ul id="topics" style="list-style-type: disc; color: #07A2D3;">
+                        <li><a href="#templates">Templates</a></li>
+                        <li><a href="#templates">Elements</a></li>
+                        <li><a href="#templates">Uploads</a></li>
+                        <li><a href="#templates">Photos</a></li>
+                        <li><a href="#templates">Text</a></li>
+                        <li><a href="#templates">Audio</a></li>
+                        <li><a href="#templates">Background</a></li>
+                        <li><a href="#templates">Emojis</a></li>
+                        <li><a href="#templates">Draw Beta</a></li>
+                        <li><a href="#templates">More</a></li>
+                    </ul>
+            </div>
+            <!--Template Section-->
+            <div class="sections">
+                <h2>Templates</h2>
+                <img src="images/canva template.webp" alt="Canva Templates">
+                <p>This section has pre designed posts which can give an idea of how to get started with your design, be it the elements, text, position of the images etc.</p>
+                <p>You can search for a particular template by typing the keywords in the search bar. Click on the template you like and start modifying its elements as you wish..</p>
+            </div>
+            <!--Ended-->
+            <!--Elements Section-->
+            <div class="sections elements">
+                <h2>Elements</h2>
+                <p>Canva offers an extensive range of elements which you're gonna find yourself using a lot.</p>
+                <img src="images/canva lines and shapes.webp" alt="Canva Lines and Shapes">
+                <ul>
+                    <li>Lines and Shapes</li>
+                    <p>Covers almost all the shapes and polygons both outlined and filled</p>
+                </ul>
+                <img src="images/canva graphics.webp" alt="Canva Graphics">
+                <ul>
+                    <li>Graphics</li>
+                    <p style="line-height:15px;">Magic recommendations</p>
+                    <p style="line-height:15px;">Gradients</p>  
+                    <p style="line-height:15px;">Avatars</p>    
+                    <p style="line-height:15px;">Stickers</p>    
+                </ul>
+                <img src="images/canva frames in graphics.webp" alt="Canva Frames">
+                <ul>
+                    <li>Frames</li>
+                    <p>Extremely useful when you want to what give a picture a definite shape  You just have to drop a frame on canvas and add an image it.</p>
+                    <p>You can also find numerical and alphabet frames</p>
+                </ul>
+                <ul>
+                    <li>Tables</li>
+                    <li>Charts</li>
+                    <li>Grids</li>
+                </ul>
+            </div>
+            <!--Ended-->
+            <!--Uploads-->
+            <div class="sections">
+                <h2>Uploads</h2>
+                <img src="images/canva upload files.webp" alt="Canva Upload Files">
+                <p>All your uploaded media is present here. You can add images, videos and audios by clicking on Upload Media or just drag and drop the files on the Canva screen.</p>
+                <h4 style="color:black; font-family: Roboto; font-weight:600;">Files can be added through :</h4>
+                <ul>
+                    <li>Upload (files on your Laptop)</li>
+                    <li>Google Drive </li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Dropbox</li>
+                    <li>Google Photos</li>
+                </ul>
+                <p>Canva also gives an option of screen recording as well as recording yourself which is great if you are doing a recorded presentation.</p>
+            </div>
+            <!--Ended-->
+            <!--Photos-->
+            <div class="sections">
+                <h2>Photos</h2>
+                <img src="images/Canva photos.webp" alt="Canva Photos">
+                <p>Contains a vast collection of photos from which you can choose for your design.</p>
+                <p>Search for the image you want to use. In addition, you can filter the search results by specifing the :</p>
+
+                <ul>
+                    <li>Background</li>
+                    <li>Orientation</li>
+                    <li>Cut-outs</li>
+                </ul>
+            </div>
+            <!--Ended-->
+            <!--Text-->
+            <div class="sections">
+                <h2>Text</h2>
+                <img src="images/canva text.webp" alt="Canva Text">
+                <p>Canva provides a set of combination of fonts for headings and sub headings. If you want a particular font from a combination, just add it on the canvas and delete the fonts which aren’t required.</p>
+                <p>Text fonts are crucial in conveying the feel of the design. It’s important to use the accordingly.</p>
+            </div>
+            <!--Ended-->
+            <!--Audio-->
+            <div class="sections">
+                <h2>Audio</h2>
+                <img src="images/canva audio.webp" alt="Canva Audio">
+                <p>You can find audios from different categories - Pop, Ambient, Happy - in this category along with the option to specify the part of the audio to be played.</p>
+                <p>Filters for audio  : </p>
+                <ul>
+                    <li>Vocals</li>
+                    <li>Instrumentals</li>
+                    <li>Effects</li>
+                </ul>
+            </div>
+            <!--Ended-->            
+            <!--Background-->
+            <div class="sections">
+                <h2>Background</h2>
+                <p>Use the background which suits the best. You can search the backgrounds like - pastel,  abstract or geometric from the search bar.</p>
+            </div>
+            <!--Ended-->
+            <!--Emojis-->
+            <div class="sections">
+                <h2>Emojis</h2>
+                <img src="images/canva emojis.webp" alt="Canva Emojis">
+                <p>Choose from hundreds of emojis and to give your design a modern and quirky styling.</p>
+            </div>
+            <!--Ended-->  
+            <!--Draw Beta-->
+            <div class="sections">
+                <h2>Draw Beta</h2>
+                <img src="images/canva draw beta.webp" alt="Canva Draw Beta">
+                <p>Draw beta contains freehand drawing tools like marker, pen, highlighter and glow pen which can give your post a candid look.</p>
+                <p>Options to change color, transparency and size of the brush are included.</p>
+            </div>
+            <!--Ended-->
+            <!--More-->
+            <div class="sections">
+                <h2>More</h2>
+                <img src="images/canva more.webp" alt="Canva What's More">
+                <p>Want to experiment more with designing? You can explore more tools like - </p>
+                <ul>
+                    <li>Videos</li>
+                    <li>Character Building</li>
+                    <li>Bitmoji</li>
+                    <li>QR Code generator</li>
+                    <li>More options for importing media</li>
+                    <li>Adding Google Maps <span style="font-weight:500; font-family:Roboto;">- You need to enter the Location in search bar.</span></li>
+                    <li> Giphy <span style="font-weight:500; font-family:Roboto;"> - Insert gifs in your design.</span></li>
+                    <li>Youtube <span style="font-weight:500; font-family:Roboto;">- Add videos directly from Youtube.</span></li>
+                </ul>
+            </div>
+            <!--Ended-->
+            <!--Conclusion-->
+            <div class="sections">
+                <h3 style="color:#0e0e0e; font-weight:600;">Conclusion</h3>
+                <p>By now, you'll be well-versed with the tools in Side Menu. Now, you can get started with your amazing design anytime</p>
+            </div>
+            <!--Ended-->
+        <!--Main Ended-->
+        </div>
+        
+    </body>
+    <script>
+    let goto=setInterval(gototopbtn, 1000);
+   
+   
+    function gototopbtn(){
+       var windScroll = document.body.scrollTop || document.documentElement.scrollTop;
+       var heights = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+       var gotoscroll = (windScroll / heights) * 100;
+
+       if(gotoscroll>=45)
+           {
+                document.getElementById('totop').style.display="inline-block";
+           }
+       else{
+               document.getElementById('totop').style.display="none";
+           }
+    }
+
+    </script>
+    </html>
