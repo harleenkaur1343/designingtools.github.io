@@ -161,6 +161,11 @@
                 ul#topics>li>a{
                 font-size:22px;
                 }  
+                div.gototop{
+                    position:fixed;
+                    right:10px;
+                    bottom:25px;
+                }  
             }
             @media only screen and (min-width:768px)
             {
@@ -173,9 +178,6 @@
                 h1{
                     font-size:52px;
                 }
-            }
-            @media only screen and (min-width:768px)
-            {
                 p{
                     font-size:22px;
                 }
@@ -183,6 +185,7 @@
                     font-size:22px;
                 }
             }
+ 
             @media only screen and (min-width:992px)
             {
                 #main{
@@ -209,19 +212,19 @@
                 <h3>Contents</h3>
                     <ul id="topics" style="list-style-type: disc; color: #07A2D3;">
                         <li><a href="#templates">Templates</a></li>
-                        <li><a href="#templates">Elements</a></li>
-                        <li><a href="#templates">Uploads</a></li>
-                        <li><a href="#templates">Photos</a></li>
-                        <li><a href="#templates">Text</a></li>
-                        <li><a href="#templates">Audio</a></li>
-                        <li><a href="#templates">Background</a></li>
-                        <li><a href="#templates">Emojis</a></li>
-                        <li><a href="#templates">Draw Beta</a></li>
-                        <li><a href="#templates">More</a></li>
+                        <li><a href="#element">Elements</a></li>
+                        <li><a href="#uploadfiles">Uploads</a></li>
+                        <li><a href="#photos">Photos</a></li>
+                        <li><a href="#text">Text</a></li>
+                        <li><a href="#audio">Audio</a></li>
+                        <li><a href="#background">Background</a></li>
+                        <li><a href="#emojis">Emojis</a></li>
+                        <li><a href="#drawbeta">Draw Beta</a></li>
+                        <li><a href="#whatsmore">More</a></li>
                     </ul>
             </div>
             <!--Template Section-->
-            <div class="sections">
+            <div class="sections" id="template">
                 <h2>Templates</h2>
                 <img src="images/canva template.webp" alt="Canva Templates">
                 <p>This section has pre designed posts which can give an idea of how to get started with your design, be it the elements, text, position of the images etc.</p>
@@ -229,7 +232,7 @@
             </div>
             <!--Ended-->
             <!--Elements Section-->
-            <div class="sections elements">
+            <div class="sections elements" id="element">
                 <h2>Elements</h2>
                 <p>Canva offers an extensive range of elements which you're gonna find yourself using a lot.</p>
                 <img src="images/canva lines and shapes.webp" alt="Canva Lines and Shapes">
@@ -259,7 +262,7 @@
             </div>
             <!--Ended-->
             <!--Uploads-->
-            <div class="sections">
+            <div class="sections" id="uploadfiles">
                 <h2>Uploads</h2>
                 <img src="images/canva upload files.webp" alt="Canva Upload Files">
                 <p>All your uploaded media is present here. You can add images, videos and audios by clicking on Upload Media or just drag and drop the files on the Canva screen.</p>
@@ -276,7 +279,7 @@
             </div>
             <!--Ended-->
             <!--Photos-->
-            <div class="sections">
+            <div class="sections" id="photos">
                 <h2>Photos</h2>
                 <img src="images/Canva photos.webp" alt="Canva Photos">
                 <p>Contains a vast collection of photos from which you can choose for your design.</p>
@@ -290,7 +293,7 @@
             </div>
             <!--Ended-->
             <!--Text-->
-            <div class="sections">
+            <div class="sections" id="text">
                 <h2>Text</h2>
                 <img src="images/canva text.webp" alt="Canva Text">
                 <p>Canva provides a set of combination of fonts for headings and sub headings. If you want a particular font from a combination, just add it on the canvas and delete the fonts which aren’t required.</p>
@@ -298,7 +301,7 @@
             </div>
             <!--Ended-->
             <!--Audio-->
-            <div class="sections">
+            <div class="sections" id="audio">
                 <h2>Audio</h2>
                 <img src="images/canva audio.webp" alt="Canva Audio">
                 <p>You can find audios from different categories - Pop, Ambient, Happy - in this category along with the option to specify the part of the audio to be played.</p>
@@ -311,20 +314,20 @@
             </div>
             <!--Ended-->            
             <!--Background-->
-            <div class="sections">
+            <div class="sections" id="background">
                 <h2>Background</h2>
                 <p>Use the background which suits the best. You can search the backgrounds like - pastel,  abstract or geometric from the search bar.</p>
             </div>
             <!--Ended-->
             <!--Emojis-->
-            <div class="sections">
+            <div class="sections" id="emojis">
                 <h2>Emojis</h2>
                 <img src="images/canva emojis.webp" alt="Canva Emojis">
                 <p>Choose from hundreds of emojis and to give your design a modern and quirky styling.</p>
             </div>
             <!--Ended-->  
             <!--Draw Beta-->
-            <div class="sections">
+            <div class="sections" id="drawbeta">
                 <h2>Draw Beta</h2>
                 <img src="images/canva draw beta.webp" alt="Canva Draw Beta">
                 <p>Draw beta contains freehand drawing tools like marker, pen, highlighter and glow pen which can give your post a candid look.</p>
@@ -332,7 +335,7 @@
             </div>
             <!--Ended-->
             <!--More-->
-            <div class="sections">
+            <div class="sections" id="whtasmore">
                 <h2>More</h2>
                 <img src="images/canva more.webp" alt="Canva What's More">
                 <p>Want to experiment more with designing? You can explore more tools like - </p>
@@ -350,7 +353,7 @@
             <!--Ended-->
             <!--Conclusion-->
             <div class="sections">
-                <h3 style="color:#0e0e0e; font-weight:600;">Conclusion</h3>
+                <h3 style="color:#1b1b1b; font-weight:600;">Conclusion</h3>
                 <p>By now, you'll be well-versed with the tools in Side Menu. Now, you can get started with your amazing design anytime</p>
             </div>
             <!--Ended-->
